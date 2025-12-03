@@ -178,7 +178,8 @@ __global__ void divKernel32Improved(float *out, const float *in) {
     float x = in[idx];
     float result;
 
-    // TODO: to be implemented during lecture
+    // implemented during lecture
+    result = work(x + lane);
 
     out[idx] = result;
 }
